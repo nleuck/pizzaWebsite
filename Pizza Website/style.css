@@ -1,0 +1,70 @@
+body
+{
+    margin: 0px;
+}
+main
+{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+h1
+{
+    text-align: center;
+}
+.navTopBar ul
+{
+    list-style-type: none;
+    background-color: hsl(0, 0%, 25%);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.navTopBar a
+{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+.navTopBar a:hover
+{
+    background-color: hsl(0,0%,10%);
+}
+
+.navTopBar a:active
+{
+    background-color: hsl(0,0%,30%);
+    color: white;
+
+}
+.navTopBar a:hover:not(.active)
+{
+    background-color: hsl(0,0%,20%);
+    color: white;
+}
+@media screen and (max-width: 900px)
+{
+    .navTopBar
+    {
+        width:100%;
+        height: auto;
+        position: relative;
+    }
+
+    .navTopBar li a
+    {
+        float: left;
+        padding: 15px;
+    }
+   
+}
+
+.navTopBar li
+{
+    float: left;
+}
